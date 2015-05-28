@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShopApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- header -->
+<div id="pheader" class="clearfix">
+
+    <div class="pcontainer">
+        <div class="logo">
+            <a href="/"></a>
+        </div>
+
+        <!---Phan tim kiem-->
+        <div class="form-search">
+	        	<form id="form-nav-search-fix" action="" method="get" >
+	    		<input id="keyword" class="key-search" type="text" placeholder="Nhập tên sản phẩm..." name="q"></input>
+
+	   		 <button class="btn-search" type="submit">
+			    <span class="icon-search"></span>
+			</button>
+		 </form>
+        </div>
+        <!--ket thuc phan tim kiem-->
+
+
+        <div class="header-phone">
+        	<p class="phone">
+		0985.39.58.23
+ 	</p>
+        </div>
+
+
+        <!--phan tuong tac tai khoan-->
+        <div class="account">
+        	<div class="accountInner">
+    		<div class="dropdown">
+        			<span class="icon-user"></span>
+        			<%if user_signed_in?%>
+        				<a href="../users/sign_in">
+        					Đăng xuất					
+        				</a>
+			<%else%>
+				<a href="../users/sign_in">
+	        				Đăng nhập					
+        				</a>
+        			<%end%>
+        			<ul class="dropdown-menu">
+			    <li>
+			    	<a href="../users/sign_in">
+				    Đăng nhập
+				</a>
+			    </li>
+			    <li>
+			    	<a href="/dang-ki">
+				    Đăng kí
+				</a>
+			    </li>
+		   	</ul>
+    		</div>
+    		<p class="shoppingCart">
+		    <a href="/gio-hang">
+		        <span class="icon-shopping"></span>
+		        Giỏ hàng
+		        <strong>  (0)  </strong>
+		    </a>
+		</p>
+	</div>
+        </div>
+        <!--ket thuc phan tai khoan-->
+
+    </div>
+
+</div>
+<!-- end header -->
+
+<!--container-->
+<div class="pcontainer">
+    <div id="pcontent" class="clearfix">
+    	<div id="home-menu-nav" class="pfull clearfix">
+    		<div class="home-cate">
+    			<div class="cate-header">
+                        		Danh mục
+			</div>
+			<div class="cate-content">
+
+			</div>
+    		</div>
+
+    		<!--menu ngang-->
+		<div class="top-cate">
+			<ul>
+			    <li>
+			    	<a href="#">
+				    Khuyễn mãi tháng  5
+				</a>
+			    </li>
+			    <li>
+			    	<a href="#">
+				    Top sale
+				</a>
+			    </li>
+			    <li>
+			    	<a href="#">
+				    Áo khoác nam
+				</a>
+			    </li>
+			    <li>
+			    	<a href="#">
+				    Áo khoác nữ
+				</a>
+			    </li>
+			</ul>
+		</div>		
+    	</div>
+
+    	<div class="pfull clearfix">
+		<div id="home-main-cate">
+		    	<ul class="clearfix">
+			    <li class="lipa">
+			    	<a class="apa" href="#">
+				                            Quần Áo
+				</a>
+				<div class="subcate">
+				    <ul class="ulsub">
+				    	<li class="lisub">
+				    		<a class="asub" href="#">
+						    Dành cho nam
+						</a>
+				    	</li>
+					<li class="lisub"></li>
+					<li class="lisub"></li>
+					<li class="lisub"></li>
+					<li class="lisub"></li>
+					<li class="lisub"></li>
+					<li class="lisub"></li>
+					<li class="lisub"></li>
+					<li class="lisub"></li>
+					<li class="lisub"></li>	
+				    </ul>
+				    <ul class="ulsub"></ul>
+				    <div class="clear"></div>
+				</div>
+			    </li>
+			    
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		 
+		<!--mainBanner   -->
+		<div id="mainBanner" class="owl-carousel owl-theme" style="display: block; opacity: 1;">	    	
+		<%if @user.nil?%>
+		<h1>Ban chua dang nhap</h1>
+		<%else%>	
+			<h1>Tai khoan hien tai <%=@user%></h1>
+		<%end%>
+	    		<%= yield %>   
+	    	</div>
+		<!--   end mainBanner   -->
+
+
+	    	 <!-- bannerRight    -->
+		    <div id="bannerRight">
+		    	
+		    </div>
+	    	<!-- end bannerRight    -->
+	</div>    
+</div>
+<!--end container-->
+
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+*, html {
+    border: medium none;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Slab",Tahoma,Geneva,sans-serif !important;
+}
+body {
+    font-family: "Roboto Slab",Tahoma,Geneva,sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 18px;
+}
+#pheader {
+    display: block;
+    padding-top: 30px;
+    width: 100%;
+    height: 40px;
+    white-space: nowrap;
+}
+
+#pheader .logo {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100%;
+    padding-right: 50px;
+}
+a {
+    text-decoration: none;
+    color: #008000;
+}
+#pheader .logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    background: url('../assets/logo.png') no-repeat scroll left center transparent;
+    text-indent: -999em;
+}
+#pheader .form-search {
+    display: block;
+    float: left;
+    width: 350px;
+    position: relative;
+}
+#pheader .form-search .key-search {
+    border-radius: 4px;
+    border: 1px solid #3D8811;
+    height: 23px;
+    color: #9F9F9F;
+    font-size: 12px;
+    display: block;
+    width: 325px;
+    padding: 6px 12px;
+}
+
+#pheader .form-search .btn-search {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none repeat scroll 0% 0% #3D8811;
+    width: 40px;
+    height: 37px;
+    border: medium none;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    display: block;
+}
+#pheader .form-search .icon-search {
+    background: url('../assets/icon_search.png') no-repeat scroll left top transparent;
+    display: block;
+    width: 40px;
+    height: 37px;
+    padding: 0px;
+}
+
+
+
+#pheader .header-phone {
+    float: left;
+    width: 150px;
+    color: #AA1515;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 37px;
+    text-align: center;
+    display: block;
+    padding: 0px 10px 0px 30px;
+}
+#pheader .header-phone .phone {
+    background: url('../assets/icon_phone.png') no-repeat scroll left center transparent;
+    padding-left: 50px;
+    height: 40px;
+}
+
+
+
+#pheader .account {
+    float: right;
+    display: block;
+    width: 270px;
+    position: relative;
+    z-index: 1000;
+}
+#pheader .account .accountInner {
+    border: 1px solid #E6EAE6;
+    border-radius: 4px;
+    height: 35px;
+    position: relative;
+}
+#pheader .account .accountInner .dropdown {
+    float: left;
+    width: 120px;
+    padding: 9px 2px;
+    border-right: 1px solid #E6EAE6;
+    position: relative;
+}
+#pheader .account .accountInner .dropdown .icon-user {
+    background: url('../assets/icon_user.png') no-repeat scroll right center transparent;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 17px;
+    height: 17px;
+    float: left;
+}
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0px;
+    font-size: 14px;
+    list-style: none outside none;
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+}
+ul, ol {
+    list-style: none outside none;
+}
+
+
+
+
+#pheader .account .accountInner .shoppingCart {
+    float: left;
+    padding-top: 9px;
+    padding-left: 10px;
+}
+#pheader .account .accountInner .shoppingCart .icon-shopping {
+    background: url('../assets/icon_shopping.png') no-repeat scroll right center transparent;
+    margin-right: 8px;
+    margin-left: 8px;
+    width: 19px;
+    height: 17px;
+    float: left;
+}
+
+
+
+
+
+.pcontainer {
+    height: 100%;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+#home-menu-nav {
+    display: block;
+    height: 40px;
+    border-bottom: 1px solid #E6EAE6;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    white-space: nowrap;
+}
+#home-menu-nav .home-cate {
+    display: block;
+    float: left;
+    width: 145px;
+}
+#home-menu-nav .home-cate .cate-header {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    background: url('../assets/home-list-icon.png') no-repeat scroll 10px center #6C6D6C;
+    line-height: 40px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#home-menu-nav .top-cate li {
+    display: block;
+    float: left;
+    line-height: 40px;
+}
+#home-menu-nav .top-cate li a {
+    padding: 0px 10px;
+    color: #F00;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: url('../assets/home-cate-seperate-icon.png') no-repeat scroll right center transparent;
+}
+
+
+.pfull {
+    width: 100%;
+    display: block;
+}
+.clearfix {
+    clear: both;
+}
+#home-main-cate {
+    display: block;
+    float: left;
+    width: 145px;
+    height: 335px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 10;
+}
+#mainBanner {
+    display: block;
+    float: left;
+    width: 585px;
+    margin-right: 0px;
+    height: 335px;
+    position: relative;
+    z-index: 9;
+}
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+#bannerRight {
+    display: block;
+    float: right;
+    width: 230px;
+    height: 335px;
+    overflow: hidden;
+}
+#home-main-cate li.lipa {
+    display: block;
+    background: none repeat scroll 0% 0% #00A200;
+    line-height: 40px;
+    border-bottom: 1px solid #E6EAE6;
+}
+#home-main-cate li.lipa a.apa {
+    display: block;
+    color: #FFF;
+    padding-left: 15px;
+    text-transform: uppercase;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: #008000;
+}
+
+#home-main-cate li.lipa .subcate {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    right: -459px;
+    top: 0px;
+    width: 458px;
+    min-height: 331px;
+    border-width: 1px 1px 4px;
+    border-style: solid solid solid none;
+    border-color: #6C6D6C;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    background-color: #FFF;
+}
+#home-main-cate li.lipa .subcate ul.ulsub {
+    display: block;
+    padding: 10px 20px;
+    width: 189px;
+    float: left;
+    line-height: 20px;
+}
+
+
+
+
+#bannerRight {
+    display: block;
+    float: right;
+    background-color: black;
+    width: 230px;
+    height: 335px;
+    overflow: hidden;
+}
