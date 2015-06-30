@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Activeadmin</title>
+  <title>PopUpBox</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header>
-	<nav>
-		<ul>
-			<li><%=link_to "Home", root_path%></li>
-			<li><%=link_to "Alphabeta", alphabetized_path%></li>
-			<li><%=link_to "Missing  email",missing_email_path%></li>
-		</ul>
-	</nav>
 
-</header>
 <%= yield %>
 
 </body>

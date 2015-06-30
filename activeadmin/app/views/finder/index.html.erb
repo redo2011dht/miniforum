@@ -1,2 +1,6 @@
-<h1>All Customers</h1>
-<%=render @customers %>
+<h1><%= @page_title %></h1>
+<% if @customers.size.zero? %>
+	<h2>No customer found</h2>
+<% else %>
+	<%=render @customers %>
+<% end %>
